@@ -1,7 +1,7 @@
 /*
 	slideSpeed plugin by @mikestreety
 */
-
+(function($){
 $.fn.slideSpeed = function(options) { 
 	// To give some examples of 'speed'
 	// Time examples are with a div which is 600px high (follows the format speed: xx / time: xx)
@@ -29,3 +29,4 @@ $.fn.slideSpeed = function(options) {
 		else {$('body').prepend('<div style="background: rgba(0,0,0,0.6); padding: 30px; text-align: center; font-size: 14px; color: #fff; line-height: 1.4; position: absolute; top: 0; left: 0; right: 0; z-index: 50000">It appears you have passed an incorrect <strong>slide</strong> vairable.<br /><br/>The variable you used was <strong>' + options.slide + '</strong>. Please only use <strong>up</strong>, <strong>down</strong> or <strong>toggle</strong></div>');} //incorrect slideage
 	}); 
 }; 
+})(jQuery);
