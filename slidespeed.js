@@ -1,3 +1,7 @@
+/*
+	slideSpeed plugin by @mikestreety
+*/
+
 $.fn.slideSpeed = function(options) { 
 	// To give some examples of 'speed'
 	// Time examples are with a div which is 600px high (follows the format speed: xx / time: xx)
