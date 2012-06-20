@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>slideSpeed Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../slidespeed.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("h3").on("click", function() {
+          $("div").slideSpeed({
+            speed: 20,
+            slide: "toggle"
+          });
+        });
+      });
+    </script>
+    <style type="text/css">
+      div {width: 500px; height: 500px; background: red; }
+    </style>
+  </head>
+  <body>
+    <h3>slideSpeed demo (click me)</h3>
+
+    <div>SLIDEY SLIDE</div>
+
+  </body>
+</html>
